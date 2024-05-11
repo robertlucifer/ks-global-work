@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <header class="flex gap-5 justify-between items-start px-20 py-5 w-full font-medium bg-white max-md:flex-wrap max-md:px-5 max-md:max-w-full">
+        <div class="flex gap-2.5 self-stretch my-auto text-4xl font-bold tracking-tighter text-center text-sky-800 whitespace-nowrap">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/253719bb1e643c729ce722332a98ab2dc734cfb9053c13fdf820936c243ad1c6?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&" alt="Taskers logo" class="shrink-0 aspect-square w-[35px]" />
+          <h1 class="flex-auto my-auto">Taskers</h1>
+        </div>
+        <div class="flex gap-4 mt-3 text-xs leading-5 uppercase text-slate-700 tracking-[3px]">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5436edfb69c14a9a2d1247fbe0933c5cac6a84bd2be494a8b801d51a0e2a9e4a?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&" alt="Location icon" class="shrink-0 self-start w-6 aspect-square" />
+          <div>
+            Coimbatore <br />
+            <span class="text-xs">641785</span>
+          </div>
+        </div>
+        <div class="flex gap-5 justify-between items-center text-sm capitalize max-md:flex-wrap">
+          <form class="flex gap-2.5 justify-center self-stretch p-2.5 text-base leading-7 text-gray-500 rounded-md border border-solid border-neutral-200">
+            <label for="taskSearch" class="sr-only">Search for task</label>
+            <input type="search" id="taskSearch" name="taskSearch" placeholder="Search for task" aria-label="Search for task" class="bg-transparent focus:outline-none" />
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2c5e8104fa0fdf6eb82bd91baae30784581a063f9419bb3e458ac77ecec0116?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&" alt="Search icon" class="shrink-0 my-auto w-4 aspect-square fill-neutral-400" />
+          </form>
+          <nav class="flex gap-5 justify-between self-stretch my-auto leading-6 text-center text-gray-800 uppercase tracking-[3px] max-md:flex-wrap max-md:max-w-full">
+            <a href="#" class="underline">Home</a>
+            <div class="flex gap-2 whitespace-nowrap">
+              <a href="#">Categories</a>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/728793af62cd9cc6817e2128bd192b95eb034b29857f9e67603b09c86b6dfc2c?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&" alt="Dropdown arrow" class="shrink-0 my-auto aspect-[1.79] w-[9px]" />
+            </div>
+            <div class="flex gap-5 justify-between">
+              <a href="#">Tasks</a>
+              <a href="#">My Booking</a>
+            </div>
+          </nav>
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e342f61568dda2d06678040c59667ca2ecb1669cd70ae326e68aa5f154ad4c0e?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&" alt="Notification icon" class="shrink-0 self-stretch my-auto aspect-square w-[25px]" />
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1cb682c74d67b97c1701ee1cbb7e5b869068bb2b3aa590d4dd6c69a6c3dbe7a?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&" alt="User profile icon" class="shrink-0 self-stretch my-auto aspect-[1.25] w-[25px]" />
+          <a href="#" class="flex gap-1.5 justify-center self-stretch px-3.5 py-2.5 my-auto tracking-wider leading-6 text-center text-white whitespace-nowrap bg-amber-500 rounded-md">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/652a90fa35df4ea19b8e9303b792203cad23196157f0270e0a13a4ed38be0cc3?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&" alt="Login icon" class="shrink-0 my-auto aspect-square w-[18px]" />
+            <span>Login/Register</span>
+          </a>
+        </div>
+      </header>
+    <div class="flex flex-col pb-20 bg-white">
+        <div class="flex flex-col items-start self-center px-5 mt-20 w-full max-w-[1400px] max-lg:mt-10 max-lg:max-w-full max-md:mt-10 max-md:max-w-full">
+          <nav class="flex gap-4 text-base font-medium capitalize" aria-label="Breadcrumb">
+            <a href="#" class="text-gray-500">Home</a>
+            <span class="shrink-0 my-auto w-2.5 h-px bg-gray-500" aria-hidden="true"></span>
+            <span class="text-sky-800" aria-current="page">Booking detail</span>
+          </nav>
+          <section class="self-stretch mt-8 max-lg:max-w-full max-md:max-w-full">
+            <div class="flex gap-5 max-lg:flex-col max-lg:gap-0 max-md:flex-col max-md:gap-0">
+              <div class="flex flex-col w-[67%] max-lg:ml-0 max-lg:w-full max-md:ml-0 max-md:w-full">
+                <article class="flex flex-col grow max-lg:mt-8 max-lg:max-w-full max-md:mt-8 max-md:max-w-full">
+                  <img src="{{ext_40}}" alt="TV Wall Mount Installation" class="w-full aspect-[2.04] max-lg:max-w-full max-md:max-w-full" loading="lazy" />
+                  <div class="flex gap-5 justify-between px-px mt-12 max-lg:flex-wrap max-lg:mt-10 max-lg:max-w-full max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+                    <div class="flex flex-col my-auto max-lg:max-w-full max-md:max-w-full">
+                      <h1 class="text-4xl font-medium text-gray-800 capitalize leading-[48.26px] max-lg:max-w-full max-md:max-w-full">
+                        TV Wall Mount Installation
+                      </h1>
+                      <div class="flex gap-5 justify-between mt-8 w-full text-sm max-lg:flex-wrap max-lg:max-w-full max-md:flex-wrap max-md:max-w-full">
+                        <span class="font-medium text-gray-800">Door Step Task</span>
+                        <div class="flex gap-1.5 text-gray-500">
+                          <span>
+                            <span class="font-medium text-gray-800">Rating</span>
+                            :
+                          </span>
+                          <div class="flex gap-2 whitespace-nowrap">
+                            <img src="{{ext_41}}" alt="4.5 star rating" class="shrink-0 aspect-[5] w-[85px]" loading="lazy" />
+                            <span>4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex flex-col font-medium">
+                      <div class="flex gap-4">
+                        <span class="text-3xl leading-9 text-sky-800 capitalize">$500</span>
+                        <span class="my-auto text-sm text-gray-500">10% off</span>
+                      </div>
+                      <div class="mt-8 text-sm text-sky-800">
+                        Per Sq.ft :
+                        <span class="text-sky-800">01</span>
+                      </div>
+                    </div>
+                  </div>
+                  <h2 class="mt-20 text-3xl font-medium leading-9 text-gray-800 capitalize max-lg:mt-10 max-lg:max-w-full max-md:mt-10 max-md:max-w-full">
+                    Description
+                  </h2>
+                  <p class="mt-2 text-base leading-7 text-gray-500 max-lg:max-w-full max-md:max-w-full">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                  </p>
+                  <div class="flex flex-col pb-2 mt-5 font-medium rounded-2xl bg-neutral-100 max-lg:max-w-full max-md:max-w-full">
+                    <div class="flex overflow-hidden relative flex-col px-14 pt-5 pb-20 w-full min-h-[179px] max-lg:px-5 max-lg:max-w-full max-md:px-5 max-md:max-w-full">
+                      <img src="{{ext_42}}" alt="" class="object-cover absolute inset-0 size-full" loading="lazy" />
+                      <div class="flex relative gap-5 justify-between mb-8 max-lg:flex-wrap max-lg:max-w-full max-md:flex-wrap max-md:max-w-full">
+                        <h3 class="text-lg leading-5 text-gray-800">Gallery</h3>
+                        <a href="#" class="my-auto text-xs text-gray-500">View All</a>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="flex flex-col ml-5 w-[33%] max-lg:ml-0 max-lg:w-full max-md:ml-0 max-md:w-full">
+                <div class="flex flex-col px-10 py-11 w-full rounded-2xl bg-neutral-100 max-lg:px-5 max-lg:mt-8 max-lg:max-w-full max-md:px-5 max-md:mt-8 max-md:max-w-full">
+                  <h2 class="text-3xl font-medium leading-9 text-gray-800 capitalize">
+                    Task Summary
+                  </h2>
+                  <div class="flex gap-5 justify-between mt-8 text-base">
+                    <span class="text-gray-500">Payment Status</span>
+                    <span class="font-medium text-black">Pending</span>
+                  </div>
+                  <div class="flex gap-5 justify-between mt-8 text-base">
+                    <span class="text-gray-500">Payment Method</span>
+                    <span class="font-medium text-black">Cash</span>
+                  </div>
+                  <div class="flex gap-5 justify-between mt-8 text-base whitespace-nowrap">
+                    <span class="text-gray-500">Discount</span>
+                    <span class="font-medium text-black">10%</span>
+                  </div>
+                  <hr class="shrink-0 mt-9 h-px bg-gray-200" />
+                  <div class="flex gap-5 justify-between mt-8">
+                    <span class="my-auto text-base text-gray-800">Total amount</span>
+                    <span class="text-xl font-medium leading-8 text-sky-800 capitalize">
+                      $200
+                    </span>
+                  </div>
+                  <button class="justify-center items-center px-16 py-5 mt-8 text-lg font-medium leading-7 text-white capitalize bg-sky-800 rounded-xl max-lg:px-5 max-md:px-5">
+                    Book Now
+                  </button>
+                  <button class="self-center mt-5 text-lg font-medium leading-7 text-sky-800 capitalize">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <h2 class="self-stretch mt-20 text-3xl font-medium leading-9 text-gray-800 capitalize max-lg:mt-10 max-lg:max-w-full max-md:mt-10 max-md:max-w-full">
+            Add Review
+          </h2>
+          <hr class="shrink-0 mt-9 max-w-full h-px bg-gray-200 w-[921px]" />
+          <form class="flex flex-col justify-center items-start px-6 py-7 mt-6 max-w-full rounded-2xl bg-neutral-100 w-[924px] max-lg:px-5 max-md:px-5">
+            <div class="flex gap-3">
+              <label for="rating" class="text-base text-gray-500">Give Rate :</label>
+              <div class="flex gap-1.5">
+                <input type="radio" name="rating" id="star1" value="1" class="visually-hidden" />
+                <label for="star1">
+                  <img src="{{ext_43}}" alt="1 star" class="shrink-0 border border-sky-800 border-solid aspect-square fill-neutral-100 stroke-[1px] stroke-sky-800 w-[22px]" loading="lazy" />
+                </label>
+                <input type="radio" name="rating" id="star2" value="2" class="visually-hidden" />
+                <label for="star2">
+                  <img src="{{ext_44}}" alt="2 stars" class="shrink-0 border border-sky-800 border-solid aspect-square fill-neutral-100 stroke-[1px] stroke-sky-800 w-[22px]" loading="lazy" />
+                </label>
+                <input type="radio" name="rating" id="star3" value="3" class="visually-hidden" />
+                <label for="star3">
+                  <img src="{{ext_45}}" alt="3 stars" class="shrink-0 border border-sky-800 border-solid aspect-square fill-neutral-100 stroke-[1px] stroke-sky-800 w-[22px]" loading="lazy" />
+                </label>
+                <input type="radio" name="rating" id="star4" value="4" class="visually-hidden" />
+                <label for="star4">
+                  <img src="{{ext_46}}" alt="4 stars" class="shrink-0 border border-sky-800 border-solid aspect-square fill-neutral-100 stroke-[1px] stroke-sky-800 w-[22px]" loading="lazy" />
+                </label>
+                <input type="radio" name="rating" id="star5" value="5" class="visually-hidden" />
+                <label for="star5">
+                  <img src="{{ext_47}}" alt="5 stars" class="shrink-0 border border-sky-800 border-solid aspect-square fill-neutral-100 stroke-[1px] stroke-sky-800 w-[22px]" loading="lazy" />
+                </label>
+              </div>
+            </div>
+            <label for="message" class="visually-hidden">Enter your message</label>
+            <textarea id="message" name="message" rows="4" class="items-start px-6 pt-7 pb-28 mt-8 max-w-full text-base text-gray-500 rounded-2xl bg-neutral-100 w-[922px] max-lg:px-5 max-md:px-5" placeholder="Enter your message"></textarea>
+            <button type="submit" class="justify-center px-8 py-3 mt-8 text-lg font-medium leading-7 text-white capitalize whitespace-nowrap bg-sky-800 rounded-xl max-lg:px-5 max-md:px-5">
+              submit
+            </button>
+          </form>
+          <h2 class="self-stretch mt-20 text-3xl font-medium leading-9 text-gray-800 capitalize max-lg:mt-10 max-lg:max-w-full max-md:mt-10 max-md:max-w-full">
+            Reviews
+          </h2>
+          <hr class="shrink-0 mt-9 max-w-full h-px bg-gray-200 w-[921px]" />
+          <div class="flex gap-5 items-start mt-9 max-lg:flex-wrap max-md:flex-wrap">
+            <img src="{{ext_48}}" alt="Ralph Edwards profile picture" class="shrink-0 rounded-full aspect-square w-[70px]" loading="lazy" />
+            <div class="flex flex-col grow shrink-0 mt-2 basis-0 w-fit max-lg:max-w-full max-md:max-w-full">
+              <div class="flex gap-5 justify-between w-full max-lg:flex-wrap max-lg:max-w-full max-md:flex-wrap max-md:max-w-full">
+                <div class="flex gap-5 self-start">
+                  <h3 class="grow text-xl font-medium leading-8 text-gray-800 capitalize">
+                    Ralph Edwards
+                  </h3>
+                  <time datetime="2021-12-02" class="my-auto text-sm text-gray-500">02 Dec, 2021</time>
+                </div>
+                <a href="#" class="text-sm text-sky-800">Edit</a>
+              </div>
+              <div class="flex gap-2.5 self-start mt-6">
+                <div class="flex gap-px self-start" aria-label="4.5 star rating">
+                  <img src="{{ext_49}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                  <img src="{{ext_50}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                  <img src="{{ext_51}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                  <img src="{{ext_52}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                  <img src="{{ext_53}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                </div>
+                <span class="text-base text-gray-500">4.5</span>
+              </div>
+              <p class="mt-8 mr-11 text-base leading-7 text-gray-500 max-lg:mr-2.5 max-lg:max-w-full max-md:mr-2.5 max-md:max-w-full">
+                Amal is incredible at what he does, very prompt with delivery and any revisions. I would definitely recommend you to work with him. My next project will definitely be getting him to sing a love ballad in the voice of Master Oogway. ;)
+              </p>
+              <hr class="shrink-0 mt-11 h-px bg-stone-300 max-lg:mt-10 max-lg:max-w-full max-md:mt-10 max-md:max-w-full" />
+            </div>
+          </div>
+          <div class="flex gap-5 items-start mt-9 max-lg:flex-wrap max-md:flex-wrap">
+            <img src="{{ext_48}}" alt="Ralph Edwards profile picture" class="shrink-0 rounded-full aspect-square w-[70px]" loading="lazy" />
+            <div class="flex flex-col grow shrink-0 mt-2 basis-0 w-fit max-lg:max-w-full max-md:max-w-full">
+              <div class="flex gap-5 justify-between w-full max-lg:flex-wrap max-lg:max-w-full max-md:flex-wrap max-md:max-w-full">
+                <div class="flex gap-5 self-start">
+                  <h3 class="grow text-xl font-medium leading-8 text-gray-800 capitalize">
+                    Ralph Edwards
+                  </h3>
+                  <time datetime="2021-12-02" class="my-auto text-sm text-gray-500">02 Dec, 2021</time>
+                </div>
+                <a href="#" class="text-sm text-sky-800">Edit</a>
+              </div>
+              <div class="flex gap-2.5 self-start mt-6">
+                <div class="flex gap-px self-start" aria-label="4.5 star rating">
+                  <img src="{{ext_49}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                  <img src="{{ext_50}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                  <img src="{{ext_51}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                  <img src="{{ext_52}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                  <img src="{{ext_53}}" alt="" class="shrink-0 aspect-square fill-yellow-500 w-[18px]" loading="lazy" />
+                </div>
+                <span class="text-base text-gray-500">4.5</span>
+              </div>
+              <p class="mt-8 mr-11 text-base leading-7 text-gray-500 max-lg:mr-2.5 max-lg:max-w-full max-md:mr-2.5 max-md:max-w-full">
+                Amal is incredible at what he does, very prompt with delivery and any revisions. I would definitely recommend you to work with him. My next project will definitely be getting him to sing a love ballad in the voice of Master Oogway. ;)
+              </p>
+              <hr class="shrink-0 mt-11 h-px bg-stone-300 max-lg:mt-10 max-lg:max-w-full max-md:mt-10 max-md:max-w-full" />
+            </div>
+          </div>
+  </body>
+</html>

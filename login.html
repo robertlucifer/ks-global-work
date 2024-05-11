@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col ml-5 w-3/5 max-md:ml-0 max-md:w-full">
+      <div
+        class="grow px-20 py-14 mt-16 w-full bg-white rounded-lg max-md:px-5 max-md:mt-10 max-md:max-w-full"
+      >
+        <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+          <div class="flex flex-col w-[56%] max-md:ml-0 max-md:w-full">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/aafe1c7344bc1186a55f119f33727023bfef2d934e542345465151ec325c8444?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&"
+              alt=""
+              class="w-full aspect-square max-md:mt-10 max-md:max-w-full"
+            />
+          </div>
+          <div class="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
+            <form
+              class="flex flex-col grow text-sm font-medium text-gray-800 max-md:mt-10"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/6784581116228d6a6a75fe187ee8269867dd86423107ec96f123ac692944cb05?apiKey=f5dcc5a8a7084a89afae2ea37cb3ae49&"
+                alt=""
+                class="self-center max-w-full aspect-square w-[100px]"
+              />
+              <h2 class="self-center mt-4 text-2xl font-bold">
+                Sign up / Login
+              </h2>
+              <label for="emailOrMobile" class="mt-9"
+                >Email Id / Mobile Number</label
+              >
+              <input
+                type="text"
+                id="emailOrMobile"
+                class="shrink-0 mt-3.5 bg-gray-200 rounded h-[50px]"
+                aria-label="Email Id / Mobile Number"
+              />
+              <label for="otp" class="mt-5">OTP</label>
+              <input
+                type="text"
+                id="otp"
+                class="shrink-0 mt-4 bg-gray-200 rounded h-[50px]"
+                aria-label="OTP"
+              />
+              <button
+                type="submit"
+                class="justify-center items-center px-6 py-2 mt-6 tracking-wider leading-6 text-center text-white capitalize whitespace-nowrap bg-amber-500 rounded-md max-md:px-5"
+              >
+                Login
+              </button>
+              <a href="#" class="self-center mt-6 underline"
+                >Continue as a Guest</a
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
